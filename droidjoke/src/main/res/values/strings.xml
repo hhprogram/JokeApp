@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DroidJoke</string>
+    <string name="joke_key">joke</string>
+    <string name="joke_lib">joke library</string>
+</resources>

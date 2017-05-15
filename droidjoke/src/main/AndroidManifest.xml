@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.harrison.droidjoke">
+
+    <application
+
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
+    <!--unsure why but requires the android:allowBackup="false" just liek in the main app
+    or else will not work. get error where it cannot resolve symbol R for some reason-->
