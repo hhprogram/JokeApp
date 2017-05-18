@@ -3,12 +3,39 @@
 
     <item
         is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.2.4_8b3e6eaeced3f741cacb361e2cb6242b65a14abd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/harrison/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.3/f6c3aed1cdfa21b5c1737c915186ea93a95a58bd/jackson-core-2.1.3.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.1.3_6c3532315da9b52ce480f29ae06f90db104a254e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="657abe17c5ba58f5d24803ba303c6005b180897a">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.2.4_5819cf5e83edc656b9899aca463b110b28fbae3b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fe159787dd4c4bc9ed6a9d4f7430e9af1f3516c8">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.2.4_6aa62f928b8ccafdf55ce6de2cb14d673eb2d9bd/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -30,12 +57,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_0f8d78ef1a65d57c9140777df95a8b8eb4da5e14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/harrison/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.20.0/93d82db2bca534960253f43424b2ba9d7638b4d2/google-http-client-1.20.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="93d82db2bca534960253f43424b2ba9d7638b4d2">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/google-http-client-1.20.0_ce39e1c90133a17a66ac4e7e4ffaf629fe12d7e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_0d9347da10f0b4b0428871bd15b7c63c88ca749e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -48,12 +93,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_60f8e8885d51ba38277f386532e98be6cc298cb0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_1814d2fb8fb31438c9bb0007f0bd0baefc984dbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="222b50ff6b7de8b890c3b83c7588547ddd476d38">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_52bb4bb6b4f99616c02dacd05fd7313f7af0fe40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.4_6e3c0365c3e54856df355d7ec53dc8302ea422d9/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,6 +156,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.2.4_b9c833614c6bf8da405c6e7b0ab2b1caacd4235b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_4bfa56ad0fdd41a6a1f6b54a5f776dca84fc6971/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.4/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -99,6 +189,24 @@
         revision="24.0.3"
         sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.2.4_398e957b2a9d3108e4223fb70f2929fcb34dd838/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="352ccba3b332690b9c68ec9d5d47cba4ff0cd499">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c11a4bb8d87d87cda853d5999f9e7f5bdd2baeb6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_fc00851c8bfe557a10a8d9e0e52ec54d7e83c9d3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -138,12 +246,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="54933c89f90a872aa342004e82b23e776fe12736">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.2.4_c2d72c36ca32fa7ece71e1fca50125090fdca0a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_f41b32317ad339985231af01ad3277fcad9da65f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_3ced826b2e35e54e77fe95a4a1605f3392511fca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_9085433a007e7f964777b4cc77a1b85f6f007c43/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -162,6 +297,15 @@
         revision="24.0.3"
         sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.4_90dd090fc2e7f76ed40d471274d18ce45a5be94a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0e23941db151e67886844de6586e180bb2b860ad">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.2.4_32ad8988040d481fad1c92db9ae0de6adb16fbf7/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -192,6 +336,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_f4afbb8d1cfc407bffbcb6267a269785fa3f00b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.2.4_c98124aabba61349a09f1d32c6d3c4c32d36fb4c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/harrison/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client-android/1.20.0/5673179575c32b69a474334255c3044adf18d40/google-api-client-android-1.20.0.jar"
         jumboMode="true"
         optimize="true"
@@ -201,21 +363,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="71678ad9231c180d23d0918494d7e71b91844e4c">
-        <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dc39a3000339930b51b6dade66911d7b5ed21c40/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/harrison/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.20.0/1d086ac5756475ddf451af2e2df6e288d18608ca/google-oauth-client-1.20.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="1d086ac5756475ddf451af2e2df6e288d18608ca">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/google-oauth-client-1.20.0_c27ffaa99c672ee9f8890c2a27c5fc599794c280/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="71678ad9231c180d23d0918494d7e71b91844e4c">
+        <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dc39a3000339930b51b6dade66911d7b5ed21c40/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,12 +399,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_078a8cdf9b306d87bedee8ca8b8a9997dfd7fdf5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="597d0d34e15e713c486e8f4ccf739f0c7d05bde4">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.2.4_95f8bb2c1be5fe67e140bb2504a874acc32496d7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.4_d63f4d1a39075a4947c668326c15fafe82de1350/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.2.4_2cce21588d3f2067d41b12822549a0569af32013/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -261,6 +450,15 @@
         revision="24.0.3"
         sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
         <dex dex="/home/harrison/AndroidStudioProjects/ud867/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_e2c705975730401f450e7d6afe4ace5ac34e8904/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.4_a83295a0ab2fbdf3a1997edfe8e231ecb2dc47a4/classes.dex" />
     </item>
     <item
         is-multidex="true"

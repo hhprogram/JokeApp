@@ -1,23 +1,38 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.JokeLib;
-import com.example.Triple;
+import java.util.concurrent.ExecutionException;
 
-import java.util.Random;
+import static android.content.ContentValues.TAG;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AsyncListener{
 
+    String joke;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "in the Main activity one");
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "in the Main activity two");
+//        note in this app when we call setContentView ->this goes a sets the view to the
+//        activity_main xml layout. However, since every fragment needs to be associated with a
+//        parent activity (they do this via the xml layout by inserting a fragment layout in the
+//        xml of the activity_main layout (see the fragment tag) What this does is then it searches
+//        in the xml info under the fragment tag for the 'name' of this fragment which is
+//        com.udacity.gradlebuilditbigger.MainActivityFragment and then calls that class to
+//        actually inflate the corresponding fragment layout that that java class inflates
+//        remember every fragment that is used must be associated with a parent activity. You can
+//        either do it programtically and call fragment manager to directly call the fragment java
+//        class or do it via xml and set the main activity xml as the layout but then have that
+//        layout refer to a fragment which then it must call to inflate the view
         setContentView(R.layout.activity_main);
+        Log.d(TAG, "in the Main activity three");
 
     }
 
@@ -51,20 +66,26 @@ public class MainActivity extends AppCompatActivity {
 //    just need to make sure this app's build.gradle file know that it depends on the newly created
 //    java library so need to add compile project(':JokeLib') in the dependencies section
     public void tellJoke(View view) {
-        JokeLib jokelib = new JokeLib();
-        jokelib.popJokes(10);
-        Random rand = new Random();
-        int joke_num = rand.nextInt(jokelib.get_num_jokes());
-//        String new_joke = joke.getAJoke(joke_num);
-//        right now this first will show the toast with new_joke and then it will start the activity
-//        or if the toast is after it will start the activity and then show the toast. However,
-//        either way the toast is shown with this new_joke's value. And then since we start the
-//        droidjoke main activity - the next time we click the button the droidjoke's tellJoke()
-//        function is called and not this one
-//        this would create an asynctask and gives it a pair argument
-        new EndpointsAsyncTask().execute(new Triple<Context, JokeLib, Integer>(this, jokelib
-                , joke_num));
+//        create an async task, this async task will then use the backend to connect to the JokeLib
+//        java library to retrieve a joke for me. Then the backend will return it to the aysncTask
+//        who will then have it it its result and then in the asyncTask post execute it will call
+//        the onTaskCompletion method to then make this main activity start an intent to show the
+//        joke in the android library.
+        try {
+            Log.d(TAG, "calling asyncTask");
+            joke = new EndpointsAsyncTask().execute(this).get();
+        } catch (InterruptedException e) {
+            Log.d(TAG, "onTellJoke: Interuptted exception when running asynctask");
+        } catch (ExecutionException e) {
+            Log.d(TAG, "onTellJoke: Execution exception when running asynctask");
+        }
 
+    }
+
+    public void onTaskCompletion() {
+        Intent intent = new Intent(this, com.harrison.droidjoke.MainActivity.class);
+        intent.putExtra(getString(R.string.joke_key), joke);
+        startActivity(intent);
     }
 
 

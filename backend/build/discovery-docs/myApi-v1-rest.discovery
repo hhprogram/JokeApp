@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"RnkXbyw9us4_w3H-FU6An0C4oYs/iUOY2xO8YNcXdnUTmKEqjjmteDc\"",
+ "etag": "\"RnkXbyw9us4_w3H-FU6An0C4oYs/cA4V_tHWL9FQR3k4cZbYZpLuseY\"",
  "discoveryVersion": "v1",
  "id": "myApi:v1",
  "name": "myApi",
@@ -13,10 +13,10 @@
   "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
  },
  "protocol": "rest",
- "baseUrl": "https://myApplicationId.appspot.com/_ah/api/myApi/v1/sayHi/",
- "basePath": "/_ah/api/myApi/v1/sayHi/",
+ "baseUrl": "https://myApplicationId.appspot.com/_ah/api/myApi/v1/",
+ "basePath": "/_ah/api/myApi/v1/",
  "rootUrl": "https://myApplicationId.appspot.com/_ah/api/",
- "servicePath": "myApi/v1/sayHi/",
+ "servicePath": "myApi/v1/",
  "batchPath": "batch",
  "parameters": {
   "alt": {
@@ -81,12 +81,53 @@
      "type": "string"
     }
    }
+  },
+  "MyJoke": {
+   "id": "MyJoke",
+   "type": "object",
+   "properties": {
+    "data": {
+     "type": "string"
+    }
+   }
   }
  },
  "methods": {
+  "getJoke": {
+   "id": "myApi.getJoke",
+   "path": "myjoke",
+   "httpMethod": "GET",
+   "response": {
+    "$ref": "MyJoke"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "sayBye": {
+   "id": "myApi.sayBye",
+   "path": "sayBye/{name}",
+   "httpMethod": "POST",
+   "parameters": {
+    "name": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "name"
+   ],
+   "response": {
+    "$ref": "MyBean"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
   "sayHi": {
    "id": "myApi.sayHi",
-   "path": "{name}",
+   "path": "sayHi/{name}",
    "httpMethod": "POST",
    "parameters": {
     "name": {

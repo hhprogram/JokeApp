@@ -1,11 +1,9 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.example.JokeLib;
-import com.example.Triple;
 import com.example.harrison.myapplication.backend.myApi.MyApi;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -13,6 +11,12 @@ import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 
 import java.io.IOException;
+
+import static android.content.ContentValues.TAG;
+
+//this import works by first you need to rebuild the project once you've added the new endpoint
+//class getJokeApi. And then after the "getJokeApi" it is usually the same thing but with the first
+//letter capitalized
 
 /**
  * Created by harrison on 5/13/17. taken from the google endpoints tutorial:
@@ -30,20 +34,26 @@ import java.io.IOException;
  * activity we take the results of this async task and use it to launch the main activity of the
  * droidjoke android library
  *
- * using a simple custom class Triple so that I can pass the context, the jokelib instance created
+ * using a simple custom class Triple so that I can pass the AsyncListener which in this case is the
+ * activity that will be calling this asynctask and the jokelib instance created
  * in the main activity and an integer number. Want to pass the jokelib instance so that we
  * don't have to recreate one everytime we want a joke. can pass it around through intents
  * after the first asyncTask (if i want to pass a jokeLib instance object I have to make it
  * parcelable)
+ * Remember for an asyncTask class declaration the elemnts within the brackets denote
+ * <input type, progress return type, result return type>
+ *    ex. we could have put Triple<AsyncListener, Context, Integer> in there.
  */
 
-class EndpointsAsyncTask extends AsyncTask<Triple<Context, JokeLib, Integer>, Void, String> {
+class EndpointsAsyncTask extends AsyncTask<AsyncListener, Void, String> {
+//    the myApiServiceis type MyApi....this type is determined when you set the 'name' (see the
+//    name field in MyEndPoint class) in the @API decorator.
     private static MyApi myApiService = null;
     private JokeLib jokes;
-    private Context context;
+    private AsyncListener listener;
 
     @Override
-    protected String doInBackground(Triple<Context, JokeLib, Integer>... params) {
+    protected String doInBackground(AsyncListener... params) {
         if(myApiService == null) {  // Only do this once
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
@@ -59,10 +69,19 @@ class EndpointsAsyncTask extends AsyncTask<Triple<Context, JokeLib, Integer>, Vo
                     });
             myApiService = builder.build();
         }
-        context = params[0].getFirst();
-        jokes = params[0].getSecond();
-        int jokeId = params[0].getThird();
-        String joke = jokes.getAJoke(jokeId);
+
+        listener = params[0];
+        String joke;
+        try {
+            Log.d(TAG, "calling backend");
+//            getJoke() returns a getJoke() api method object. Then execute actually executes the
+//            code within that method. Then that method returns a MyJoke object which has a
+//            getData() method
+            joke = myApiService.getJoke().execute().getData();
+        } catch (IOException e) {
+            Log.d(TAG, "api service didn't work");
+            return e.getMessage();
+        }
         return joke;
     }
 
@@ -107,10 +126,12 @@ class EndpointsAsyncTask extends AsyncTask<Triple<Context, JokeLib, Integer>, Vo
 //        }
 //    }
 
+//    just like in the movies app. The way I 'wait' for the async task to complete but still have
+//    the code execute at the 'app' main activity is the same as the "movies" app by having the
+//    main activity implement a AsyncListener interface. Then on the postExecute we call that method
+//    on the passed in instance of the AsyncListener (ie the Main Activity calling the AsyncTask)
     @Override
     protected void onPostExecute(String result) {
-        Intent intent = new Intent(context, com.harrison.droidjoke.MainActivity.class);
-        intent.putExtra(context.getString(R.string.joke_key), result);
-        context.startActivity(intent);
+        listener.onTaskCompletion();
     }
 }

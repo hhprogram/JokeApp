@@ -2,12 +2,14 @@ package com.udacity.gradle.builditbigger;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import static android.content.ContentValues.TAG;
 
 
 /**
@@ -21,6 +23,7 @@ public class MainActivityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.d(TAG, "in main fragment");
         View root = inflater.inflate(R.layout.fragment_main, container, false);
 
         AdView mAdView = (AdView) root.findViewById(R.id.adView);
