@@ -30,6 +30,4 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "in the android lib activity");
     }
 
-
-
 }
