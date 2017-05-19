@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 import static android.content.ContentValues.TAG;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements AsyncListener{
 //        parent activity (they do this via the xml layout by inserting a fragment layout in the
 //        xml of the activity_main layout (see the fragment tag) What this does is then it searches
 //        in the xml info under the fragment tag for the 'name' of this fragment which is
-//        com.udacity.gradlebuilditbigger.MainActivityFragment and then calls that class to
+//        com.udacity.gradlebuilditbigger.sadasd and then calls that class to
 //        actually inflate the corresponding fragment layout that that java class inflates
 //        remember every fragment that is used must be associated with a parent activity. You can
 //        either do it programtically and call fragment manager to directly call the fragment java
@@ -84,7 +85,9 @@ public class MainActivity extends AppCompatActivity implements AsyncListener{
 
     public void onTaskCompletion() {
         Intent intent = new Intent(this, com.harrison.droidjoke.MainActivity.class);
-        intent.putExtra(getString(R.string.joke_key), joke);
+        ArrayList<String> lst = new ArrayList<>();
+        lst.add(joke);
+        intent.putStringArrayListExtra(getString(R.string.joke_key), lst);
         startActivity(intent);
     }
 
