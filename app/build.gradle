@@ -43,7 +43,9 @@ dependencies {
 //    compile dependency as this is the client module that will be call the backend
     compile project(path: ':backend', configuration: 'android-endpoints')
     compile 'com.android.support:appcompat-v7:25.1.1'
-    compile 'com.google.android.gms:play-services-ads:10.2.4'
+//    technically don't need google player services ads i think because to serve ads we use
+//    firebase ads dependency
+    freeCompile 'com.google.android.gms:play-services-ads:10.2.4'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile 'com.android.support:support-v4:25.1.1'
     androidTestCompile 'org.mockito:mockito-core:1.+'

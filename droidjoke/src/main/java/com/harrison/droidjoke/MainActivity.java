@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         output = new StringBuilder();
         for (String joke : jokes) {
             output.append(joke);
+//            use the following as this is the system dependent line separator.
+//            http://stackoverflow.com/questions/14534767/how-to-append-a-newline-to-stringbuilder
+//            can also do output.append("\n") -> but potentially won't work with some systems so
+//            more general if do this
             output.append(System.getProperty("line.separator"));
         }
         text.setText(output.toString());

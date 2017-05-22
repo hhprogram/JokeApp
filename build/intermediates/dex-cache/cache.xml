@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="4f56a517732f2b369764b89379070a34241a8313">
+        sha1="32c6458a7ed0fdf28d2eddf3129ffc51bc688318">
         <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/paid/debug/folders/1000/10/instant-run_a2dfe7519b765a68324cb04bbe168f2a6fb435ef/classes.dex" />
     </item>
     <item
@@ -205,7 +205,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="c23cd16670d14b5a3bc2c88ffff9341960a4d58b">
+        sha1="8e8a78b33dc61f020448d4bb05ac7296d1e2f8d9">
         <dex dex="/home/harrison/AndroidStudioProjects/BuildItBigger/JokeApp/app/build/intermediates/transforms/dex/paid/debug/folders/1000/10/instant-run-bootstrap_7777f959e2815c744a2706acd946a1a1ef1b0a7c/classes.dex" />
     </item>
     <item
